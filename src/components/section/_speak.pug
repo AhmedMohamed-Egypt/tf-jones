@@ -1,0 +1,44 @@
+section(class="speak bg-tf-grey")
+ .container.position-relative
+  .speak__container
+   #carouselExampleDark.carousel.carousel-dark.slide.speakSection.d-flex.flex-column.js.pt-3
+    .carousel-indicators.order-3
+      button.active(type='button' data-bs-target='#carouselExampleDark' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+      button(type='button' data-bs-target='#carouselExampleDark' data-bs-slide-to='1' aria-label='Slide 2')
+      button(type='button' data-bs-target='#carouselExampleDark' data-bs-slide-to='2' aria-label='Slide 3')
+    .carousel-inner
+      .carousel-item.active(data-bs-interval='10000')
+        // <img src="..." class="d-block w-100" alt="...">
+        // Instead of image, div with style and min-height
+        div()
+          .carousel-caption.d-block.col-xl-7.mx-auto.col-12
+            h5(class="text-blue-bold-28") “Can’t speak too highly of the team who did the work – very professional and pleasant.”
+            p(class="text-blue-semiBold-28") Stockport Homes Group Residents
+            
+        // end of div style min-height: 180px;
+      .carousel-item(data-bs-interval='2000')
+        // Instead of image, div with style and min-height
+        div()
+          .carousel-caption.d-block.col-xl-7.mx-auto.col-12
+            h5(class="text-blue-bold-28") “Can’t speak too highly of the team who did the work – very professional and pleasant.” 
+            p(class="text-blue-semiBold-28") Stockport Homes Group Residents
+        // end of div style min-height: 180px;
+      .carousel-item
+        // Instead of image, div with style and min-height
+        div()
+          .carousel-caption.d-block.col-xl-7.mx-auto.col-12
+            h5(class="text-blue-bold-28") “Can’t speak too highly of the team who did the work – very professional and pleasant.”
+            p(class="text-blue-semiBold-28") Stockport Homes Group Residents
+  button.carousel-control-prev.customer-say-btn-carousel.active(type='button' data-bs-target='#carouselExampleDark' data-bs-slide='prev')
+     span.carousel-control-prev-icon(aria-hidden='true')
+     span.visually-hidden Previous
+  button.carousel-control-next.customer-say-btn-carousel(type='button' data-bs-target='#carouselExampleDark' data-bs-slide='next')
+     span.carousel-control-next-icon(aria-hidden='true')
+     span.visually-hidden Next
+
+
+
+            
+
+
+

@@ -1,0 +1,33 @@
+.no-of-projects{
+    @media only screen and (max-width: 767px){
+        transform: translateY(-120px);
+      }
+
+    transform: translateY(-100px);
+   
+
+    &.custom-transform{
+        transform: translateY(100px);
+        @media only screen and (max-width: 992px){
+            transform: none;
+            margin-bottom: 50px;
+            margin-top: 50px;
+   }
+    }
+    &__container{
+        >div{
+            p{
+              
+            }
+        }
+        .th-white{
+            color: #fff;
+        }
+        .th-yellow{
+            color: $tfYellow;
+        }
+        .th-min-green{
+            color: $tfMint;
+        }
+    }
+}

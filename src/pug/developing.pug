@@ -1,0 +1,133 @@
+---
+title: Article
+BodyClass: asset-article
+---
+extends shared/_layout
+block content
+
+  section.hero.blank.ratio.ratio-16x9.page-h-offset 
+    .hero__background.obj-cen
+      img(src="img/1ca0b49b33c7f3ed302a4f5c50a65b58.png" srcset="./img/1ca0b49b33c7f3ed302a4f5c50a65b58.png 2x")
+    .hero__wrapper.grad
+      .container
+        .row
+          .col.col-md-4(data-aos="fade")
+            h1.fs-2.lh-1.fw-bold Partner with Welsh Power for complete asset management. 
+    
+
+  section.home__contact__block.mt-4 
+      .container 
+          .row 
+              .col.col-md-8.text-center.mgray.offset-md-1.mx-auto
+                  h3.mb-1.lh-1.fw-light Speak to our team to understand more about how we are supporting energy projects around the country - from initial planning to long-term management.
+                  a.btn.btn-md.btn-outline-success(href='contact-us.html') Contact us
+
+  section.services-content.mt-5.blk-grey.pt-5
+    .container
+      .row.mb-2 
+        .col12 
+          h2.fw-light.fs-2 Our Services
+      .row
+        .col-12.col-lg-3 
+         
+          ul.mb-5#myTab.nav.flex-column(role='tablist')
+            li(role='presentation')
+              button#serv-one-tab.active(data-bs-toggle='tab', data-bs-target='#serv-one', type='button', role='tab', aria-controls='home', aria-selected='true') Development Services
+            li(role='presentation')
+              button#serv-two-tab(data-bs-toggle='tab', data-bs-target='#serv-two', type='button', role='tab', aria-controls='profile', aria-selected='false') Construction Management Services
+            li(role='presentation')
+              button#serv-three-tab(data-bs-toggle='tab', data-bs-target='#serv-three', type='button', role='tab', aria-controls='contact', aria-selected='false') Operational Asset Management         
+            li(role='presentation')
+              button#serv-four-tab(data-bs-toggle='tab', data-bs-target='#serv-four', type='button', role='tab', aria-controls='contact', aria-selected='false') Compliance &amp; Regulatory Management         
+            li(role='presentation')
+              button#serv-five-tab(data-bs-toggle='tab', data-bs-target='#serv-five', type='button', role='tab', aria-controls='contact', aria-selected='false') Commercial Management / Optimisation         
+
+            li(role='presentation')
+              button#serv-six-tab(data-bs-toggle='tab', data-bs-target='#serv-six', type='button', role='tab', aria-controls='contact', aria-selected='false') Cost Management   
+
+            li(role='presentation')
+              button#serv-seven-tab(data-bs-toggle='tab', data-bs-target='#serv-seven', type='button', role='tab', aria-controls='contact', aria-selected='false') Corporate and Financial Management      
+
+
+
+        .col-12.col-lg-7.offset-lg-1 
+  
+          #myTabContent.tab-content
+            #serv-one.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='serv-one-tab')  
+                .d-flex.flex-row.align-items-center
+                  .icon
+                    i.icon-development-serv-
+                  h2.fw-light.fs-1.lh-1 Development 
+                    br
+                    | Services
+                .mb-5#development(data-aos='fade')
+                  p
+                    | Welsh Power is a leading independent developer of flexible power plant, grid stability and battery projects. Our in-house development team have developed in excess of 1.5GW’s of flexible power plant, grid stability projects and battery storage projects.
+                  p
+                    | As an experienced developer we undertake the full development process from site identification, through land acquisition, connection management, design, consents, procurement, finance and due diligence.
+                  p
+                    | {Could then include separate headings like you had in the email using the icons prepared as per the email to}:
+                  ul
+                    li Grid Stability Projects – with a link to Rassau?
+                    li
+                      | Battery Projects – no link at the moment but maybe something to keep in mind to add for the future
+                    li Flexible Power – with link to case studies
+                    li No need for the owned power plant as we don’t own anymore
+                  p
+                    | If you are a funder, we can also partner with you to develop projects.  Further, we offer re-development services of any partly developed projects or re-purpose projects either for sale or funding, construction and operations.
+                  p
+                    | As a partner, we can help you to optimise the project design, secure suitable land rights, obtain all necessary consents, firm quotations for the construction works, negotiate EPC Contracts, obtain grid and/or gas connection offers, take the project through your funding process, including due diligence, negotiating power purchase agreements and securing contracts with National Grid. We also offer construction management {link} with in-house project managers and expert advisors, to build the project and operational management services with a 24/7 operations desk, highly experienced engineers {link} and a skilled optimisation team to manage the operations of the site.
+                
+          
+
+            #serv-two.tab-pane.fade(role='tabpanel', aria-labelledby='serv-two-tab') 
+               .d-flex.flex-row.align-items-center
+                  .icon
+                    i.icon-construction-mgmt-ser
+                  h2.fw-light.fs-1.lh-1 Construction Management Services
+          
+            #serv-three.tab-pane.fade(role='tabpanel', aria-labelledby='serv-three-tab')
+               .d-flex.flex-row.align-items-center
+                  .icon
+                    i.icon-opr-asset-mgm
+                  h2.fw-light.fs-1.lh-1 Operational Asset Management  
+           
+            #serv-four.tab-pane.fade(role='tabpanel', aria-labelledby='serv-four-tab')
+               .d-flex.flex-row.align-items-center
+                  .icon
+                    i.icon-compliance-reg-mgm
+                  h2.fw-light.fs-1.lh-1 Compliance &amp; Regulatory Management
+           
+            #serv-five.tab-pane.fade(role='tabpanel', aria-labelledby='serv-five-tab')
+               .d-flex.flex-row.align-items-center
+                  .icon
+                    i.icon-commercial-mgmt-op
+                  h2.fw-light.fs-1.lh-1 Commercial Management/ Optimisation
+          
+            #serv-six.tab-pane.fade(role='tabpanel', aria-labelledby='serv-six-tab')
+               .d-flex.flex-row.align-items-center
+                  .icon
+                    i.icon-cost-management
+                  h2.fw-light.fs-1.lh-1 Cost Management
+
+            #serv-seven.tab-pane.fade(role='tabpanel', aria-labelledby='serv-seven-tab')
+               .d-flex.flex-row.align-items-center
+                  .icon
+                    i.icon-corp-fin-mgm
+                  h2.fw-light.fs-1.lh-1 Corporate and Financial Management
+    section.mt-4.white
+      .container
+        .row.p-5
+          .col-12.col-lg-10.text-center.sec-content.mx-auto( data-aos="fade")
+          
+            h2.fw-light.mb-0 Accreditations 
+            p.mb-1.mt-1
+              | Welsh Power can offer all the services necessary to successfully develop, construct, operate and optimise energy assets - operating to the highest standards, as proven by accreditation at 
+              a(href='/assets/documents/13/1635239043_iso-45001-certificate.pdf' target='_blank' title='ISO 45001:2018') ISO 45001:2018
+              | , 
+              a(href='/assets/documents/13/1635239084_iso-9001-certificate.pdf' target='_blank' title='ISO 9001:2015') ISO 9001:2015
+              |  and 
+              a(href='/assets/documents/13/1635239066_iso-14001-certificate.pdf' target='_blank' title='ISO 14001:2015') ISO 14001:2015
+              |  for safety, quality and environmental processes. Please contact us to discuss how we can help you.
+            img.img-fluid.d-block.mx-auto.mt-1(src='./img/accreditations.png' alt=''  data-aos="fade-right")
+

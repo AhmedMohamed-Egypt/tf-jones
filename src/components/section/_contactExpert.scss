@@ -1,0 +1,27 @@
+.team-contact {
+    font-family: 'Roboto';
+    color: #fff;
+  
+
+    & h3 {
+        font-size: 1.75em;
+        font-weight: 700;
+    }
+
+    & .contact-button {
+     
+        border: 1px solid #fff;
+        padding: 9px 47px;
+        display: inline-block;
+        box-shadow: inset 0 0 0 0 #fff;
+        transition: .25s;
+        font-weight: 600;
+        &:hover{
+          box-shadow: inset 200px 0 0 0 #fff;
+          color: $tfNavy;
+        }
+
+
+    }
+}
+

@@ -1,0 +1,8 @@
+- var List=[{no:320,title:"Number of projects completed since 2010",theme:'th-white'},{no:56,title:"Apprentices taken on this year alone",theme:'th-yellow'},{no:4320,title:"People helped via community housing assiciations",theme:'th-min-green'}]
+section(class="no-of-projects")
+ .container
+  div(class="bg-tfBlue col-xl-10 col-12 mx-auto d-flex no-of-projects__container justify-content-evenly py-lg-5 flex-column flex-lg-row py-3")
+   each val,index in List 
+    div(class=`${val.theme} ${index===1?'my-5 my-lg-0':''} mb-lg-5 mb-lg-0 px-3 px-lg-0`)
+     h3(class="text-48-bold mb-0")=val.no 
+     p(class="text-16-bold col-lg-8 col-md-9 col-12")=val.title

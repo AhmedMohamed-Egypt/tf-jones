@@ -1,0 +1,22 @@
+- var txt1= 'Working in partnership with customers, clients and colleagues.'
+- var txt2 = 'Recognising that our clients have building safety problems and that we exist to resolve them.'
+- var services = [{title:'Collaboration',list:[txt1,txt2],theme:'blue'},{title:'Integrity',list:[txt1,txt2],theme:'navy'},{title:'Stability',list:[txt1,txt2],theme:'yellow'}]
+
+
+
+section(class="ourvalues bg-tf-grey ")
+ .container 
+  div(class="ourvalues__container col-lg-10 mx-auto col-12")
+   h2(class="text-blue-48-bold--1 py-4") Our Values
+   div(class="types-services__container")
+    .row.flex-wrap
+     each val,index in services 
+      .col-12.col-lg-4.p-0
+       div(class=`${val.theme} py-4 ps-5 size-22 f-300 pb-5 ${index===1?'white-line':''}` )
+        span.line.d-inline-block
+        h2(class=`text-semi-bold-28 ${index===1?'text-white':''}`)=val.title
+        ul(class="list-group ps-3" )
+         each item in val.list 
+          li(class=`text-16-reg ${index===1?'text-white':''}`)=item
+         
+  

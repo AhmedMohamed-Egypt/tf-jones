@@ -1,0 +1,34 @@
+- var list = [{text:'“The bathroom is now my ‘show piece’ – I can now enjoy a shower without the fear of falling and I LOVE it! Thank you so much for using the ‘perfect’ contractors, they have worked their magic and I would highly recommend them!”',name:'Name Surname',company:'Company Name',date:'Date'},{text:'“The bathroom is now my ‘show piece’ – I can now enjoy a shower without the fear of falling and I LOVE it! Thank you so much for using the ‘perfect’ contractors, they have worked their magic and I would highly recommend them!”',name:'Name Surname',company:'Company Name',date:'Date'},{text:'“The bathroom is now my ‘show piece’ – I can now enjoy a shower without the fear of falling and I LOVE it! Thank you so much for using the ‘perfect’ contractors, they have worked their magic and I would highly recommend them!”',name:'Name Surname',company:'Company Name',date:'Date'}]
+
+
+mixin carousel()
+ #carouselExampleDark.carousel.carousel-dark.slide.d-flex.flex-column.js
+    .carousel-indicators.order-3.w-100.position-static.m-0.justify-content-start
+      button.active(type='button' data-bs-target='#carouselExampleDark' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+      button(type='button' data-bs-target='#carouselExampleDark' data-bs-slide-to='1' aria-label='Slide 2')
+      button(type='button' data-bs-target='#carouselExampleDark' data-bs-slide-to='2' aria-label='Slide 3')
+    .carousel-inner
+     each val,index in list 
+      .carousel-item(class=`${index==0?'active':''} `)
+       div()
+        .carousel-caption.d-block.col-xxl-9.col-md-8.col-11.position-static.py-0
+         p(class="color-tfNavy f-400 size-16 text-start my-2")=val.text 
+         h4(class="color-tfNavy f-600 size-24 text-start")=val.name 
+         h5(class="color-tfNavy f-400 size-16 text-start")=val.company
+         
+section(class="customer-saying bg-tfMint pt-lg-5 mt-lg-5 pt-2 mt-0")
+ .container.position-relative
+  div(class="customer-saying__container col-lg-9 mx-auto col-11  py-lg-5 py-2")
+   .row.py-4
+    .col-xxl-4.col-xl-5.col-10
+     h2(class="text-blue-48-bold--1 lh-1 customer-saying__mainHeading") What Our Customer are Saying
+    .col-xxl-8.col-xl-7.col-12
+     div(class="customer-saying__carousel position-relative")
+      +carousel
+      img(src="img/qoute.png" class="customer-saying__qoute")
+  button.carousel-control-prev.customer-say-btn-carousel.active(type='button' data-bs-target='#carouselExampleDark' data-bs-slide='prev')
+     span.carousel-control-prev-icon(aria-hidden='true')
+     span.visually-hidden Previous
+  button.carousel-control-next.customer-say-btn-carousel(type='button' data-bs-target='#carouselExampleDark' data-bs-slide='next')
+     span.carousel-control-next-icon(aria-hidden='true')
+     span.visually-hidden Next

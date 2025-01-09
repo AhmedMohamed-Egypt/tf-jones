@@ -1,0 +1,106 @@
+.types-services{
+    @media only screen and (max-width: 769px){
+    .container{
+        max-width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    }
+    transform: translateY(-100px);
+    overflow-x: hidden;
+    @media only screen and (max-width: 993px){
+        transform: none;
+    }
+    &__container{
+        ul{
+            max-width: 75%;
+            li{
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 15px;
+                    left: -13px;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                }
+            }
+        }
+        .line{
+            width: 80px;
+            height: 4px;
+            background-color: #fff;
+        }
+        .blue{
+            color: #fff;
+            background-color: $tfBlue;
+            .learnMoreBtn{
+                border: 1px solid #fff;
+            }
+
+
+        }
+        .yellow{
+            background-color: $tfYellow;
+            color: $tfNavy;
+            li{
+                &::after{
+                    background-color: $tfNavy  !important;
+                }
+            }
+            .line{
+                background-color: $tfNavy;
+               
+            }
+            .learnMoreBtn{
+                border: 1px solid $tfNavy;
+            }
+        }
+        .navy{
+            background-color: $tfNavy;
+            color: $tfMint;
+            li{
+                &::after{
+                    background-color: $tfMint  !important;
+                }
+            }
+            .learnMoreBtn{
+                border: 1px solid $tfMint;
+            }
+            .line{
+                background-color: $tfMint;
+               
+            }
+            &.white-line{
+                .line{
+                    background-color: #fff;
+                }
+                li{
+                    &::after{
+                        background-color: #fff !important;
+                    }
+                }
+                
+            }
+        }
+        .mintgreen {
+            background-color: $tfMint;
+            color: $tfNavy;
+            .line{
+                background-color: $tfNavy;
+               
+            }
+            li{
+                &::after{
+                    background-color: $tfNavy  !important;
+                }
+            }
+            .learnMoreBtn{
+                border: 1px solid $tfNavy;
+            }
+        }
+
+    }
+}

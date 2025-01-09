@@ -1,0 +1,207 @@
+/* HEADER*/
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9;
+  background: #FFF;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  z-index: 9999999;
+  @media only screen and (max-width:767px){
+    padding-right: 0 !important;
+  }
+
+  &__container {
+    padding-left: 30px;
+    padding-right: 30px;
+    @media only screen and (max-width:767px){
+      padding-right: 0 !important;
+      padding-left:  0 !important;
+    }
+    @media only screen and (max-width:993px) {
+       padding-right: 0 !important;
+    }
+    @media only screen and (max-width: 1016px) and (min-width: 992px)  {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  &__navLinks{
+    a{
+      padding-top: 4.5px;
+      padding-bottom: 4.5px;
+      background-color: #FFF;
+      transition: all 0.2s ease-out;
+      color: $tfNavy;
+      &:hover {
+       background-color: $tfYellow;
+       color: $tfNavy;
+       transition: all 0.2s ease-out;
+      }
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    &.container{
+      @media only screen and (max-width:993px){
+        max-width: 100% !important;
+      }
+    }
+  }
+  &__logo {
+    flex: 0 0 auto;
+    margin: 5px;
+    font-size: 0;
+    padding-right: 30px;
+    color: $colorPrimary;
+    @media only screen and (max-width: 1200px) and (min-width: 992px){
+     padding-right: 0;
+     }
+
+
+    .ico {
+      font-size: 60px;
+      padding: 2px;
+    }
+    img {      // font-size: 60px
+      // height: 69px;
+      padding: 10px 5px;
+      // width: 390px;
+
+      
+      @media only screen and (max-width: 1200px) and (min-width: 992px){
+       width: 200px;
+      }
+      @media only screen and (max-width:991px){
+    
+        // width: 320px;
+        height: 54px;
+     }
+    }
+  }
+  &__cta {
+    flex: 0 1 432px;
+    margin-left: auto;
+  }
+  &__search {
+    background: $colorBg;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 0;
+  }
+  &__search-input {
+    flex: 1 1 auto;
+    -webkit-appearance: none;
+    display: block;
+    background: white;
+    padding: 13px 20px;
+    font-size: 16px;
+    border: 0;
+  }
+  &__search-button {
+    -webkit-appearance: none;
+    flex: 0 0 auto;
+    color: $colorPrimary;
+    background: transparent;
+    padding: 4px 10px;
+    .ico {
+      font-size: 28px;
+    }
+  }
+  &__hamburger {    // display: none
+    margin-left: auto;
+    
+  }
+  &.is-fixed {    // should be normalized to -100% scroll at this point
+    position: fixed;
+    // visibility: hidden
+    transform: translate3d(0,-100%,0) !important;
+    transition: transform .25s $ease;
+    .header__wrapper {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }
+  &.is-fixed-visible {    // visibility: visible
+    transform: translate3d(0,0,0) !important;
+  }
+  &.is-transitioning {
+    transition: transform .25s $ease;
+    transform: translate3d(0,-100%,0) !important;
+  }
+}
+@include r($lg) {
+  .header {
+    &__cta {
+      display: none;
+    }
+  }
+}
+@include r($sm) {
+  .header__container {
+    padding-left: 0px;
+  }
+}
+
+
+
+
+
+.mobile-navi__menu--bottom{
+  width: 220px;
+  align-self: flex-start;
+  margin-left: 90px;
+  
+  padding-bottom: 15px;
+  display: inline-block;
+  @media only screen and (max-width: 500px) {
+    margin-left: 50px;
+    }
+  h3{
+    letter-spacing: .75px;
+  }
+  svg{
+    width: 25px;
+    height: 25px;
+  }
+  &--links{
+        /* margin: 10px 0; */
+        border-bottom: 1.25px solid #fff;
+        /* padding: 15px 0; */
+        margin-bottom: 25px;
+        padding-top: 10px;
+        padding-bottom: 25px;
+        svg path{
+          transition: .25s;
+        }
+        a{
+          &:hover{
+            svg path{
+              fill: $tfYellow;
+              transition: .25s;
+            }
+          }
+        }
+  }
+  &--terms{
+    a{
+      padding: 10px 0;
+      display: block;
+      transition: .25s;
+      &:hover{
+        color: $tfYellow !important;
+      }
+    }
+  }
+}
+
+
+
+
+
+

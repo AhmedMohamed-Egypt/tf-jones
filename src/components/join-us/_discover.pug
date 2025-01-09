@@ -1,0 +1,18 @@
+- var imgs = ['img/join-1.png','img/join-2.png','img/join-3.png']
+- var list = [{title:'Rewarding Career',text:'We stand by our principle of offering meaningful employment by providing a wealth of benefits, including clear progression routes and much more!'},{title:'Personal Development',text:'Our goal is to support employees in pursuing educational opportunities that will enhance their contributions to the company, and their individual career progression.'},{title:'Making a Difference',text:'We have a strong sense of purpose; achieving the right balance between getting the job done safely and effectively, whilst building authentic relationships with our clients, customers and colleagues.'}]
+section(class="join-us-discover bg-tfBlue")
+ .container 
+  .join-us-discover__container.col-lg-10.mx-auto.col-12.translateUp-100.px-md-3.px-0
+   .join-us-discover--imgs.overflow-hidden
+    .row 
+     each val in imgs 
+      .col-lg.col-md-12.p-0 
+       img(src=`${val}` class="img-fluid w-100" )
+   h2(class="text-bold-48--1 text-white mt-4 mb-0" ) Discover TF Jones
+   p(class="text-16-reg text-white my-4") We want our people to do the right thing safely, and in the 'TFJ Way'. If you are passionate and have a great work ethic, TF Jones can offer you a bright future. We have a great community and we are all very different which makes for a collaborative working environment.
+   .join-us-discover--list 
+    .row
+     each val in list 
+      .col-lg-4.col-md-6.col-12
+       h3(class="text-semi-bold-28 text-white mb-0 py-3 lh-1")=val.title 
+       p(class="size-18-reg-white lh-s3")=val.text

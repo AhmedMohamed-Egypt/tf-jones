@@ -1,0 +1,61 @@
+.buildExpert{
+    img{
+        width: 70%;
+    }
+    &__imgs{
+        &--1{
+            z-index: 99;
+            
+        }
+        &--2{
+            transform: translate(0, -40%);
+            z-index: 9;
+            
+           
+
+        }
+        &--yellow{
+            &--pseduelement{
+                z-index: 2;
+    position: static;
+    width: 90px;
+    height: 60%;
+    top: 0;
+    left: 100px;
+    bottom: 0;
+    background-color: $tfYellow;
+    width: 30%;
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    /* margin-right: -71%; */
+    /* margin-top: 15%; */
+    /* margin-left: 0; */
+    transform: translate(75%,40%);
+
+
+
+            }
+            
+            /*
+           
+            @media only screen and (max-width: 1400px){
+                transform: translate(100px, 80px);
+            }
+            */
+            &--firstimg{
+                &::before{
+                    
+                 
+                }
+            }
+        }
+    }
+    &__rightside{
+        @media only screen and (max-width: 993px){
+        transform: translateY(-50px);
+        padding-top: 20px;
+        } 
+    }
+
+}

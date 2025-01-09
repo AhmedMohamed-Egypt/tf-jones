@@ -1,0 +1,6 @@
+- var imgs = ['img/work-1.png','img/work-2.png','img/work-3.png','img/work-4.png']
+section(class="ourworks overflow-hidden")
+ .row 
+  each val in imgs  
+   .col.p-0
+    img(src=`${val}` class="img-fluid")

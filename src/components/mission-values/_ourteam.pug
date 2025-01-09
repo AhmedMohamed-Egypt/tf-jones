@@ -1,0 +1,14 @@
+- var team = [{name:'Dan Jones',position:'Director'},{name:'Sam Jones',position:'Director'},{name:'Mark Jones',position:'Director'},{name:'Tanya Jones',position:'Director'},{name:'Laine Maw',position:'Head of Human Resources'},{name:'Ken Bendle',position:'Head of Operations'}]
+section(class="ourteam")
+ .container 
+  div(class="ourteam__container")
+   h2(class="text-blue-48-bold--1 py-4") Our Team 
+   div(class="ourteam__cards row  flex-wrap justify-content-center")
+    each val in team 
+     .col-xl-3.col-12.col-md-3.mx-auto.mx-xl-0.mb-3
+      div(class="ourteam__cards--card mb-2")
+       div(class="ourteam__cards--img position-relative")
+        img(src="https://placehold.jp/310x310.png" class="img-fluid w-100" style="height: 100%")
+       div 
+        h3(class="color-tfNavy size-20 f-600 mb-0 mt-1")=val.name 
+        h4(class="tfBluecolor size-16 f-400 mb-0")=val.position

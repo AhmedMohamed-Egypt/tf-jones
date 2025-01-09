@@ -1,0 +1,60 @@
+.content-casesatudy{
+    .container{
+        @media only screen and (max-width:768px){
+            max-width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    &__container{
+        border-top: 10px solid $tfMint;
+       
+        background-color: #fff;
+        transform: translateY(-100px);
+        @media only screen and (max-width:600px){
+       transform: none;
+        }
+    }
+    &__heading{
+        border-bottom: 1px solid $tfBlue;
+        &--cta{
+            @media only screen and (max-width:767px){
+              width: 100%;
+             //margin: 0 !important;
+            }
+        }
+    }
+    &__employee{
+        &--borderYellow{
+            padding-left: 20px;
+            &::after{
+                content: "";
+                position: absolute;
+                top: auto;
+                left: 5px;
+                width: 15px;
+                height: 80%;
+                background-color: #EDFF1C;
+                margin: auto;
+                z-index: 1;
+                top: 0;
+                bottom: 0;
+            }
+        }
+       
+        &--flyimg{
+            right: 0;
+            top: 65%;
+            @media only screen and (max-width:993px){
+                top: auto;
+                bottom: 50px;
+                width: 90px;
+            }
+            @media only screen and (max-width:768px){
+                top: auto;
+                bottom: 50px;
+                width: 50px;
+            }
+        }
+    }
+}

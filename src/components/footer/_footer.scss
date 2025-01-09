@@ -1,0 +1,62 @@
+// FOOTER
+  
+.footer {
+  .social {
+    fill: $tfBlue;
+    color: $tfBlue;
+
+    h3 {
+      font-size: 1em;
+      font-weight: 700;
+    }
+    .instagram {
+      fill: currentColor;
+      transition: fill 0.2s ease-out;
+   
+    &:hover svg {
+      fill: $instagram;
+      transition: fill 0.2s ease-out;
+    }
+    }
+    .linkedin {
+      fill: currentColor;
+
+      &:hover svg {
+        fill: $linkedin;
+        transition: fill 0.2s ease-out;
+      }
+    }
+  }
+  h3 {
+    font-size: 1em;
+  }
+  .link--title {
+    font-size: 1.75em;
+    font-weight: 700;
+    color: $tfNavy;
+  }
+
+  .list-group {
+    
+    line-height: 24px;
+    font-size: 1em;
+    font-weight: 700;
+
+    li {
+      margin-bottom: 0.5em;
+    }
+
+    a {
+      color: $tfBlue;
+      background: none;
+      transition: all 0.2s ease-out;
+      
+      &:hover {
+        background: $tfYellow;
+        padding: 4px;
+      }
+    
+    }
+  }
+
+}

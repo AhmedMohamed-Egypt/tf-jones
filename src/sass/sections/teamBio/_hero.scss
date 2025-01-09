@@ -1,0 +1,28 @@
+.heroTeamBio{
+    &__container{
+        background-image: url("../img/bio-logo.png");
+        background-blend-mode: color-burn;
+        /* background-position: 0 0px; */
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #1E4264;
+        background-position: -27%;
+        @media only screen and (max-width: 767px){
+            background-size: cover;
+            background-position: 20% 0;
+        } 
+    }
+    &__intro--img{
+        transform: translateY(100px);
+        @media only screen and (max-width: 767px){
+            transform: translateY(50px);
+        } 
+        img{
+            @media only screen and (max-width: 767px){
+                width: 100%;
+            } 
+        }
+      
+    }
+    
+}

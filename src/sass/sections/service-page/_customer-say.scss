@@ -1,0 +1,42 @@
+.customer-saying {
+    @media only screen and (max-width: 767px){
+        .container{
+            max-width: 100% !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+        }
+    div.carousel  .carousel-indicators{
+        button:not(.active){
+            background-color: #fff !important;
+        }
+    }
+    &__qoute{
+        position: absolute;
+        width: 120px;
+        height: auto;
+        
+        bottom: 0;
+        transform: translate(400px, 6px);
+        
+        @media only screen and (max-width: 993px) and (min-width: 768px)  {
+            width: 100px;
+            
+            transform: translate(300px, 0px);
+        }
+        @media only screen and (max-width: 767px){
+            width: 90px;
+            
+            transform: translate(250px, 0px);
+        }
+        @media only screen and (max-width: 360px){
+            transform: translate(199px, -48px);
+            width: 70px;
+            height: auto;
+        }
+        //
+    }
+    &__mainHeading{
+       
+    }
+}

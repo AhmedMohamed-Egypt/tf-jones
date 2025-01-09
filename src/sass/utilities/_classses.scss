@@ -1,0 +1,370 @@
+.color-tfNavy{
+    color: $tfNavy;
+}
+.tfYellow{
+    color: $tfYellow;
+}
+.tfMint{
+    color: $tfMint !important;
+}
+.tfGrey{
+    color: $tfGrey;
+}
+.bg-tf-grey{
+    background-color: $tfGrey;
+}
+.tfBluecolor{
+    color:  $tfBlue;
+}
+.bg-tfYllow{
+    background-color: $tfYellow;
+}
+.bg-tfMint{
+    background-color: $tfMint;
+}
+.bg-tfBlue{
+    background-color: $tfBlue;
+}
+.bg-navy{
+    background-color:  $tfNavy;;
+}
+.border-white{
+    border: 1px solid #fff;
+}
+.border-navy{
+    border: 1px solid $tfNavy;
+}
+.border-mint{
+    border: 1px solid $tfMint;
+
+}
+.h2-heading{
+    color: $tfBlue;
+    
+    font-weight: 700;
+    line-height: 1.1;
+}
+.h3-heading{
+    color: $tfNavy;
+    font-size: 32px;
+    font-weight: 600;
+}
+.size-38-bold{
+    font-size: 38px;
+    font-weight: 600;
+}
+.text-navy-bold{
+    color: $tfNavy;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.25;
+}
+.text-white-semi-bold-32{
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.25;
+}
+.text-navy{
+    color: $tfNavy;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+}
+.text-white-24 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+}
+.text-white-22{
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.25;
+}
+.text-navy-38{
+    color: $tfNavy;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.25;
+}
+.text-navy-bold-38{
+    color: $tfNavy;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 1.25;
+}
+.text-white-bold-38{
+    color: #fff;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 1.25;
+}
+.text-navy-semiBold-38{
+    color: $tfNavy;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 1.25;
+}
+
+.text-blue-semiBold-38{
+    color: $tfBlue;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 1.25;
+}
+.text-blue-bold-38{
+    color: $tfBlue;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 1.25;
+}
+.text-72-bold{
+    font-weight: 900;
+    font-size: 72px;
+}
+.text-24-bold{
+    font-weight: 600;
+    font-size: 24px;
+}
+.text-72-blue-bold{
+    color: $tfBlue;
+    font-weight: 900;
+    font-size:72px;
+}
+
+.border-bottom-blue{
+    border-bottom: 1px solid $tfBlue  ;
+}
+.shrink-container{
+    max-width: 85%;
+    margin: auto;
+}
+.translateUp{
+    transform: translateY(-150px);
+}
+.translateUp-100{
+    transform: translateY(-100px);
+}
+.reset-transfrom-transform{
+    @media (max-width: 769px){
+          transform: none !important;
+          padding: 50px 0;
+    }
+}
+.pb-150{
+padding-bottom: 150px !important;
+}
+.pt-100{
+    padding-top: 100px;
+}
+.w-90{
+    width: 90%;
+}
+.rounded-3px{
+    border-radius: 3px ;
+}
+.w-84{
+    width: 84%;
+}
+.left-border-yellow{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 35px;
+        height: 80%;
+        bottom: 0;
+        background-color: $tfYellow;
+        margin: auto;
+        z-index: 1;
+    }
+}
+.top-border-yellow{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 15px;
+       
+        background-color: $tfYellow;
+        margin: auto;
+        z-index: 1;
+    }
+}
+
+.mb-30px{
+    margin-bottom: 30px;
+}
+.reset-margin-top.no-margin-top{
+    margin-top: 0 !important;
+}
+div.carousel  .carousel-indicators{
+    position: static;
+    button{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: $tfBlue !important;
+        opacity: 1;
+        &:not(:last-child){
+            margin-right: 16px;
+        }
+        &.active{
+            background-color: $tfYellow !important;
+        }
+    }
+}
+
+.coloredCards{
+    &__div{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        p{
+
+        }
+     
+        .learnMoreBtn {
+            letter-spacing: .5px;
+        }
+    }
+    .line{
+        width: 50px;
+        height: 5px;
+        display: block;
+    }
+    .blue{
+     background-color: $tfBlue;
+     color: #fff;
+     .line{
+        background-color: #fff;
+     }
+     .learnMoreBtn{
+        border: 1px solid #fff;
+     }
+    }
+    .navy{
+        background-color: $tfNavy;
+        color: $tfMint;
+        .line{
+            background-color: $tfMint;
+         }
+         .learnMoreBtn{
+            border: 1px solid $tfMint;
+         }
+    }
+    .yellow{
+        background-color: $tfYellow;
+        color: $tfNavy;
+        .line{
+            background-color: $tfNavy;
+         }
+         .learnMoreBtn{
+            border: 1px solid $tfNavy;
+         }
+    }
+    .grey{
+        color: #fff;
+        background-color: #bbc6d1;
+        .line{
+            background-color: #fff;
+         }
+    }
+    .light-grey {
+        color: #fff;
+        background-color: #bbc6d1;
+        .line{
+            background-color: #fff;
+         }
+        
+    }
+}
+.join-us-sliding {
+    .coloredCards{
+        p{
+         height: 125px;
+        }
+        .grey{
+            color:$tfNavy;
+            
+            .line{
+                background-color: $tfNavy;
+             }
+        }
+        .navy{
+            color: #fff;
+            .line{
+                background-color: #fff;
+             }
+        }
+    }
+}
+.no-transform{
+    transform: none !important;
+}
+.volume-30{
+    width: 30px;
+    height: 30px;
+
+}
+.centerElement{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.left-20px{
+    left: 20px;
+}
+.bk-no-repeat{
+    background-repeat: no-repeat;
+}
+.bk-size-cover{
+    background-size: cover;
+}
+.top-mint-border{
+    border-top: 10px solid #B0F0C7;;
+}
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1330px;
+    }
+}
+.w-100-mobile{
+    @media (max-width: 992px) {
+     width: 100% !important;
+    }
+}
+
+//reset bootstrap class
+.carousel-caption{
+    position: static;
+}
+.header__wrapper.container{
+padding-left: 0 !important;
+padding-right: 0 !important;
+}
+%bk{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.icon-envelop{
+   @extend %bk;
+    background-image: url("data:image/svg+xml,%3Csvg width='28' height='22' viewBox='0 0 28 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.726315 0.733332V0C0.533684 0 0.348943 0.0772617 0.212733 0.214788C0.0765224 0.352315 0 0.538841 0 0.733332H0.726315ZM26.8736 0.733332H27.6C27.6 0.538841 27.5234 0.352315 27.3872 0.214788C27.251 0.0772617 27.0663 0 26.8736 0V0.733332ZM0.726315 1.46666H26.8736V0H0.726315V1.46666ZM26.1473 0.733332V18.3333H27.6V0.733332H26.1473ZM23.9684 20.5333H3.63157V22H23.9684V20.5333ZM1.45263 18.3333V0.733332H0V18.3333H1.45263ZM3.63157 20.5333C3.05368 20.5333 2.49946 20.3015 2.09083 19.8889C1.6822 19.4764 1.45263 18.9168 1.45263 18.3333H0C0 19.3058 0.382611 20.2384 1.06366 20.926C1.74472 21.6137 2.66842 22 3.63157 22V20.5333ZM26.1473 18.3333C26.1473 18.9168 25.9178 19.4764 25.5091 19.8889C25.1005 20.3015 24.5463 20.5333 23.9684 20.5333V22C24.9315 22 25.8552 21.6137 26.5363 20.926C27.2174 20.2384 27.6 19.3058 27.6 18.3333H26.1473Z' fill='%2312293E'/%3E%3Cpath d='M1.34619 1.35938L13.7998 13.9335L26.2535 1.35938' stroke='%2312293E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.icon-phone{
+    @extend %bk;
+    background-image: url("data:image/svg+xml,%3Csvg width='29' height='29' viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.1473 27.8328C16.3323 26.5981 11.9375 24.0923 8.42259 20.5774C4.9077 17.0625 2.40186 12.6677 1.16718 7.8527C0.22407 4.14774 3.40988 1 7.23424 1L8.96472 1C9.91995 1 10.6866 1.77699 10.7817 2.72702C10.9383 4.30244 11.3104 5.84892 11.8875 7.32317L9.25717 9.9535C11.3102 14.2362 14.7638 17.6898 19.0465 19.7428L21.6768 17.1125C23.151 17.6902 24.6975 18.0628 26.273 18.22C27.2247 18.3134 28 19.0801 28 20.0353V21.7658C28 25.5901 24.8523 28.7759 21.1473 27.8328Z' stroke='%2312293E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}

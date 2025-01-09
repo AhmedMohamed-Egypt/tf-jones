@@ -1,0 +1,10 @@
+- var ListProjects=[{no:'99%',title:"Number of projects completed since 2010",theme:'th-white'},{no:56,title:"Apprentices taken on this year alone",theme:'th-yellow'},{no:4320,title:"People helped via community housing associations",theme:'th-min-green'}]
+section(class=`no-of-projects custom-transform`)
+  .container
+   .col-lg-10.col-12
+    div(class="bg-tfBlue ps-3 ps-lg-0 d-flex no-of-projects__container justify-content-evenly py-5")
+     .row
+      each val,index in ListProjects 
+       div(class=`${val.theme} ${index===1?"my-5 my-lg-0":""} p-0 d-flex flex-column align-items-lg-center col-lg-4 col-11 mx-auto mx-lg-0`)
+        h3(class="fixed-size-bold-48 mb-0 col-lg-9 col-md-5 col-md-6 col-8 p-0")=val.no 
+        p(class="text-16-bold col-lg-9 col-md-5 col-md-6 col-8 p-0")=val.title

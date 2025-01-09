@@ -1,0 +1,22 @@
+- var HelpList = [{title:'Explore our Services',text:'Find out more about what compliance and adaptation services we do and how we do it.',btn:'Learn More',theme:'blue'},{title:'Why Choose TF Jones',text:'Find out more about our history, expert technical knowledge, and a passion for building safety.',btn:'Learn More',theme:'navy'},{title:'Working with us & Apprenceships',text:'Find out how you can start a long and rewarding career with a great community at TF Jones.',btn:'Learn More',theme:'yellow'}]
+
+
+section(class="Helping-Local mt-0 mt-lg-5 pt-xxl-5 mt-xxl-5")
+ div(class="container") 
+  .row 
+     .col-12.col-md-10.mx-auto.pt-xxl-5
+        div(class="Helping-Local__firstPart col-10 col-xl-12  mx-auto ")
+         h2(class="text-blue-48-bold lh-1") Helping Local Communities Since 1975
+         p(class="col-10 lh-s3 text-navy-16 f-400 pt-3 pb-5" ) From humble beginnings working in domestic properties to providing niche technical services for some of our country's most prestigious organisations, enhancing building safety has always been at the heart of what we do.
+  .row 
+   .col-12.col-md-10.mx-auto
+    div(class="Helping-Local__secondPart d-flex flex-column flex-lg-row")
+     each val,index in HelpList
+      div(class=`${val.theme} pt-5`)
+       span(class="line")
+       h3(class="text-white-semi-bold-28 py-3")=val.title
+       p(class="text-white-16 f-400 lh-s3 pb-5")=val.text 
+       a(href="#" class=`learnMoreBtn f-600 size-20 ${index===1?'colormint':''}`)=val.btn
+
+
+
