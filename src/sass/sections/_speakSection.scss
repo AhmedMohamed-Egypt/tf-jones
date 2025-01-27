@@ -1,0 +1,43 @@
+.speak{
+    margin-top: 100px;
+    @media only screen and (max-width: 992px){
+      padding-bottom: 120px;;
+      margin-top: 0px !important;
+      padding-top: 20px;
+
+    }
+}
+
+.speakSection{
+   
+    padding-bottom: 100px;
+.carousel-item {
+    >div{
+     //   min-height: 250px !important;
+        h5{
+            margin-bottom: 0;
+        }
+    }
+}
+.carousel-indicators{
+    position: static;
+    button{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $tfBlue !important;
+        opacity: 1;
+        &:not(:last-child){
+            margin-right: 16px;
+        }
+        &.active{
+            background-color: $tfYellow !important;
+        }
+    }
+}
+.text-blue-semiBold-38{
+    @media only screen and (max-width: 991px){
+      font-weight: 400;
+    }
+}
+}

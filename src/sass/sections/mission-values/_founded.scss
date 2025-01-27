@@ -1,0 +1,28 @@
+.hero-serivces.missionvalues{
+    @media only screen and (max-width:767px){
+        padding-bottom: 0 !important;
+    }
+}
+
+.missionFounded{
+    &__container{
+        @media only screen and (max-width:767px){
+            transform: none;
+        }
+    }
+    &__leftside{
+        background-image: url("../img/founded-bg.png");
+        padding: 95px 0px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: color-burn;
+        @media only screen and (max-width:767px) {
+            padding: 40px 0px;
+         }
+        &--p{
+            @media only screen and (max-width:767px) {
+               line-height: 1.25;
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.ourvalues {
+    &__container{
+        transform: translateY(100px);
+        @media only screen and (max-width: 992px){
+            transform: none;
+            padding-bottom: 50px;
+   }
+    }
+}

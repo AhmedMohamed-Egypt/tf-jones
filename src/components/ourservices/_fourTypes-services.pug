@@ -1,0 +1,19 @@
+- var txt1= 'Our fabrication and installation services provide essential protection by containing fire and smoke, with our regular surveys and maintenance keeping fire doors in peak condition.'
+- var txt2 = 'Our fabrication and installation services provide essential protection by containing fire and smoke, with our regular surveys and maintenance keeping fire doors in peak condition.'
+- var services = [{title:'Passive Fire Safety',subtitle:'Fire Doors',list:[txt1,txt2],btn:'Learn More',theme:'blue'},{title:'Passive Fire Safety',subtitle:'Fire Stopping',list:[txt1,txt2],btn:'Learn More',theme:'yellow'},{title:'Active Fire Safety',list:[txt1,txt2],btn:'Learn More',theme:'navy'},{title:'Property Adaptations',list:[txt1,txt2],btn:'Learn More',theme:'mintgreen'}]
+
+section(class="types-services")
+ .container 
+  div(class="types-services__container")
+   .col-lg-10.mx-auto.col
+    .row.flex-wrap 
+     each val , index in services 
+      .col-lg-6.p-lg-0.col-12
+       div(class=`${val.theme} py-4  ps-xl-5 ps-3` )
+        span.line.d-inline-block
+        h2(class=" f-900 f-600-mobile  size-28")=val.title 
+        h3(class="size-28 f-600 mb-1")=(val.subtitle?`- ${val.subtitle}`:'')
+        ul(class="list-group ps-3")
+         each item in val.list 
+          li(class="text-16-reg f-300")=item
+        a(href="#" class=`learnMoreBtn size-16 f-500 mt-2 mb-1 mt-4 ${index===2?'colormint':''}`)=val.btn 

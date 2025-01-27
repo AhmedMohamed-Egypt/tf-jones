@@ -1,0 +1,28 @@
+- var HelpList = [{title:'Solution 1',text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel dui leo. Duis sit amet sapien condimentum, egestas nulla sodales.',btn:'Learn More',theme:'blue'},{title:'Solution 2',text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel dui leo. Duis sit amet sapien condimentum, egestas nulla sodales.',btn:'Learn More',theme:'navy'},{title:'Solution 3',text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel dui leo. Duis sit amet sapien condimentum, egestas nulla sodales.',btn:'Learn More',theme:'yellow'},{title:'Solution 4',text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel dui leo. Duis sit amet sapien condimentum, egestas nulla sodales.',btn:'Learn More',theme:'grey'}]
+
+mixin carouselItem(className)
+ div(id="myCarousel" class=`${className}` data-bs-ride="carousel")
+  div(class="coloredCards d-flex mt-5")
+   div(class="carousel-inner w-100")  
+    each val,index in HelpList
+     div(class=`carousel-item ${index===0?'active':''}`)
+      div(class="col-lg-3 col-sm-6 col-12 mx-auto mx-sm-0")
+       div(class=`${val.theme} pt-3 coloredCards__div pt-5`)
+        span(class="line")
+        h3(class="text-semi-bold-28 pt-3")=val.title
+        p(class="text-16-reg lh-s3 ")=val.text 
+  
+   button.carousel-control-prev(type='button' data-bs-target='#myCarousel' data-bs-slide='prev')
+    span.carousel-control-prev-icon(aria-hidden='true')
+    span.visually-hidden Previous
+   button.carousel-control-next(type='button' data-bs-target='#myCarousel' data-bs-slide='next')
+    span.carousel-control-next-icon(aria-hidden='true')
+    span.visually-hidden Next
+
+
+section(class="safetySolutions py-5")
+ .container 
+  .safetySolutions__container 
+   h2(class="text-blue-48-bold") Safety Solutions 
+   p(class="text-navy-16-reg") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel dui leo. Duis sit amet sapien condimentum, egestas nulla sodales, ultricies nisl. Morbi tempor odio molestie, condimentum dui non, eleifend quam. Ut congue est felis, non consectetur sapien hendrerit at. Nulla efficitur leo.
+  +carouselItem('carousel  slide safetySolutions__carousel')

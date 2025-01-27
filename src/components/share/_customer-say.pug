@@ -1,0 +1,27 @@
+- var list = [{text:'“The bathroom is now my ‘show piece’ – I can now enjoy a shower without the fear of falling and I LOVE it! Thank you so much for using the ‘perfect’ contractors, they have worked their magic and I would highly recommend them!”',name:'Name Surname',company:'Company Name',date:'Date'},{text:'“The bathroom is now my ‘show piece’ – I can now enjoy a shower without the fear of falling and I LOVE it! Thank you so much for using the ‘perfect’ contractors, they have worked their magic and I would highly recommend them!”',name:'Name Surname',company:'Company Name',date:'Date'},{text:'“The bathroom is now my ‘show piece’ – I can now enjoy a shower without the fear of falling and I LOVE it! Thank you so much for using the ‘perfect’ contractors, they have worked their magic and I would highly recommend them!”',name:'Name Surname',company:'Company Name',date:'Date'}]
+
+
+mixin carousel()
+ #carouselExampleDark.carousel.carousel-dark.slide.d-flex.flex-column
+    .carousel-indicators.order-3.w-100.position-static.m-0
+      button.active(type='button' data-bs-target='#carouselExampleDark' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+      button(type='button' data-bs-target='#carouselExampleDark' data-bs-slide-to='1' aria-label='Slide 2')
+      button(type='button' data-bs-target='#carouselExampleDark' data-bs-slide-to='2' aria-label='Slide 3')
+    .carousel-inner
+     each val,index in list 
+      .carousel-item(class=`${index==0?'active':''} `)
+       div()
+        .carousel-caption.d-block.w-100.position-static
+         p(class="color-tfNavy f-400 size-20 mb-1")=val.text 
+         h4(class="color-tfNavy f-500 size-20")=val.name 
+         h5(class="color-tfNavy f-400 size-20")=val.company
+         img(src="img/qoute.png" class="customer-saying__qoute")
+section(class=`customer-saying bg-tfMint`)
+ .container 
+  div(class="customer-saying__container shrink-container  py-5")
+   .row.py-4
+    .col-4
+     h2(class="h2-heading lh-1") What Our Customer are Saying
+    .col-8
+     div(class="customer-saying__carousel")
+      +carousel

@@ -1,0 +1,36 @@
+section(class="clientReviews bg-tfMint py-5")
+ .container.position-relative
+  .clientReviews__container.col-lg-10.mx-auto.col-12
+   div(id = 'carouselExampleDark' class=`carousel js carousel-dark slide speakSection d-flex flex-column pb-0 ${className}`)
+    .carousel-indicators.order-3.justify-content-center.m-0
+      button.active(type='button' data-bs-target='#carouselExampleDark' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+      button(type='button' data-bs-target='#carouselExampleDark' data-bs-slide-to='1' aria-label='Slide 2')
+      button(type='button' data-bs-target='#carouselExampleDark' data-bs-slide-to='2' aria-label='Slide 3')
+    .carousel-inner
+      .carousel-item.active(data-bs-interval='10000')
+     
+        div(style='')
+          .carousel-caption.d-block
+            h5(class="text-navy-28-bold text-center") “I am absolutely thrilled to have joined TF Jones and started my Domestic Electrician Level 3 apprenticeship. My mentor, Alan, has been so supportive”
+            p(class="text-navy-medium-28 text-center") Stockport Homes Group Residents
+            
+        
+      .carousel-item(data-bs-interval='2000')
+        
+        div(style='')
+          .carousel-caption.d-block
+            h5(class="text-navy-28-bold text-center") “I am absolutely thrilled to have joined TF Jones and started my Domestic Electrician Level 3 apprenticeship. My mentor, Alan, has been so supportive” 
+            p(class="text-navy-medium-28 text-center") Stockport Homes Group Residents
+       
+      .carousel-item
+        
+        div(style='')
+          .carousel-caption.d-block
+            h5(class="text-navy-28-bold text-center") “I am absolutely thrilled to have joined TF Jones and started my Domestic Electrician Level 3 apprenticeship. My mentor, Alan, has been so supportive”
+            p(class="text-navy-medium-28 text-center") Stockport Homes Group Residents
+  button.carousel-control-prev.customer-say-btn-carousel.active(type='button' data-bs-target='#carouselExampleDark' data-bs-slide='prev')
+     span.carousel-control-prev-icon(aria-hidden='true')
+     span.visually-hidden Previous
+  button.carousel-control-next.customer-say-btn-carousel(type='button' data-bs-target='#carouselExampleDark' data-bs-slide='next')
+     span.carousel-control-next-icon(aria-hidden='true')
+     span.visually-hidden Next

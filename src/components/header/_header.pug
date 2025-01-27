@@ -1,0 +1,110 @@
+// HEADER :: START
+- var  ulList = ['Home','Our Services','Mission & Values','Case Studies','Join Us','Get in Touch'];
+header.header
+  .header__container.js-container-align(data-position="right" data-selector=".header")
+    .header__wrapper.container
+      .flex-wrapper.flex-fill
+        a(href="home.html" class="header__logo d-block")
+
+          img.img-fluid(src='img/tf_logo.png')
+          //- svg.ico.ico-color-logo
+          //-   use(xlink:href='/img/logo.svg')
+          //- +svgColor("logo_welsh")
+          //- img.img-fluid(src='img/wplogo_2.png')
+      div(class="header__navLinks")
+        
+        ul.nav.col-lg-auto.me-lg-auto.mb-md-0.d-none.d-lg-block         
+          li
+            a.bg-tfYllow.px-3(href="home.html") Home          
+          li
+            a.px-3(href="ourservices.html") Our Services          
+          li
+            a.px-3(href="mission-values.html") Mission & Values          
+          li
+            a.px-3(href="casestudy.html") Case Studies          
+          li
+            a.px-3(href="join-us.html") Join Us          
+          li
+            a.px-3(href="get-in-touch.html") Get in Touch          
+
+      .header__hamburger.d-lg-block.d-lg-none
+        .hamburger.hamburger--squeeze(js-hamburger)
+          .hamburger-box
+            .hamburger-inner
+
+// MOBILE NAVI
+.mobile-navi
+  .mobile-navi__wrapper
+    .mobile-navi__background
+    .mobile-navi__panel.d-flex.align-items-end.flex-column
+      ul.mobile-navi__menu.w-100
+        li
+          a(href="home.html") Home
+        li
+          a(href="ourservices.html") Our Services
+        li
+          a.active(href="#") Mission &amp; Values
+        li
+          a(href="#") Case Studies
+        li
+          a(href="#") Join Us 
+      div(class="mt-1 mobile-navi__menu--bottom")
+                         h3(class="size-24 f-700 roboto-font mb-0") Stay Connected 
+                         div(class="d-flex mobile-navi__menu--bottom--links")
+                              a(href="#" class="d-block facebook")
+                               <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0.72998V19.9363H20.1667V0.72998H0ZM13.5962 6.15154H12.1297C11.1391 6.15154 10.9538 6.61899 10.9538 7.27567V8.86867H13.4909L13.1321 10.9574H10.9523V16.8153H8.7636V10.9574H6.56899V8.86867H8.7636V6.94097C8.7636 4.99633 9.96915 3.85101 11.7901 3.85101C12.662 3.85101 13.3752 3.93998 13.5932 3.96681V6.15154H13.5962Z" fill="white"/>
+                                </svg>
+                              a(href="#" class="d-block ms-1 twitter")
+                                  <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.928711 0.72998V19.9363H21.0954V0.72998H0.928711ZM16.199 7.7982C16.2035 7.90694 16.2064 8.01709 16.2064 8.12866C16.2064 11.4982 13.5136 15.3819 8.59056 15.3819C7.07954 15.3819 5.67084 14.9596 4.48605 14.2366C4.69513 14.2606 4.90866 14.2719 5.12516 14.2719C6.37964 14.2719 7.53329 13.8637 8.44969 13.1802C7.27824 13.1604 6.28919 12.4218 5.94962 11.4093C6.11273 11.4389 6.28029 11.4559 6.45378 11.4559C6.69845 11.4559 6.93423 11.4248 7.15962 11.3669C5.93479 11.1325 5.01246 10.103 5.01246 8.86726C5.01246 8.85596 5.01246 8.84607 5.01246 8.83478C5.37279 9.02543 5.7865 9.14123 6.22543 9.15394C5.50773 8.69638 5.0347 7.91683 5.0347 7.03136C5.0347 6.56391 5.16668 6.12612 5.398 5.74905C6.71773 7.29121 8.68991 8.3066 10.9157 8.41252C10.8697 8.22611 10.846 8.03122 10.846 7.83068C10.846 6.42269 12.0441 5.2816 13.5225 5.2816C14.2921 5.2816 14.9875 5.59088 15.4769 6.08657C16.0863 5.97218 16.6602 5.76035 17.1762 5.46802C16.976 6.06398 16.5519 6.5625 15.9988 6.87884C16.5401 6.8167 17.0561 6.68112 17.5366 6.47776C17.1777 6.98899 16.724 7.43808 16.199 7.79679V7.7982Z" fill="white"/>
+                                  </svg>
+                              a(href="#" class="d-block ms-1 twitter")
+                                  <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_14_604)">
+                                        <path d="M10.9402 8.28271C9.75392 8.28271 8.78711 9.20208 8.78711 10.3333C8.78711 11.4645 9.75244 12.3838 10.9402 12.3838C12.128 12.3838 13.0933 11.4645 13.0933 10.3333C13.0933 9.20208 12.128 8.28271 10.9402 8.28271Z" fill="white"/>
+                                        <path d="M13.9001 5.20801H7.98056C6.64452 5.20801 5.55908 6.24317 5.55908 7.51418V13.1518C5.55908 14.4242 6.64601 15.458 7.98056 15.458H13.9001C15.2361 15.458 16.3216 14.4228 16.3216 13.1518V7.51418C16.3216 6.24176 15.2346 5.20801 13.9001 5.20801ZM10.9403 13.4088C9.15942 13.4088 7.71069 12.0291 7.71069 10.333C7.71069 8.63691 9.15942 7.25716 10.9403 7.25716C12.7212 7.25716 14.17 8.63691 14.17 10.333C14.17 12.0291 12.7212 13.4088 10.9403 13.4088ZM14.3716 7.7698C13.9624 7.7698 13.6317 7.45487 13.6317 7.06509C13.6317 6.67532 13.9624 6.36039 14.3716 6.36039C14.7809 6.36039 15.1116 6.67532 15.1116 7.06509C15.1116 7.45487 14.7809 7.7698 14.3716 7.7698Z" fill="white"/>
+                                        <path d="M0.856934 0.72998V19.9363H21.0236V0.72998H0.856934ZM17.3981 13.152C17.3981 14.9893 15.8292 16.4834 13.9 16.4834H7.98051C6.05133 16.4834 4.48249 14.9893 4.48249 13.152V7.51434C4.48249 5.67703 6.05133 4.18289 7.98051 4.18289H13.9C15.8292 4.18289 17.3981 5.67703 17.3981 7.51434V13.152Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_14_604">
+                                        <rect width="20.1667" height="19.2063" fill="white" transform="translate(0.856934 0.72998)"/>
+                                        </clipPath>
+                                        </defs>
+                                  </svg>
+                              a(href="#" class="d-block ms-1 twitter")
+                                  <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <g clip-path="url(#clip0_14_608)">
+                                              <path d="M0.785645 0.72998V19.9363H20.9523V0.72998H0.785645ZM13.3275 16.4862L9.91996 11.7637L5.65382 16.4862H4.55207L9.43062 11.0845L4.55207 4.3227H8.27252L11.4992 8.79382L15.5385 4.3227H16.6402L11.9885 9.47311L17.048 16.4862H13.326H13.3275Z" fill="white"/>
+                                              <path d="M10.9194 9.43802L7.74614 5.11377H6.05273L9.98523 10.4718L10.479 11.1454L13.8466 15.7323H15.54L11.4147 10.1117L10.9194 9.43802Z" fill="white"/>
+                                              </g>
+                                              <defs>
+                                              <clipPath id="clip0_14_608">
+                                              <rect width="20.1667" height="19.2063" fill="white" transform="translate(0.785645 0.72998)"/>
+                                              </clipPath>
+                                              </defs>
+                                  </svg>
+                              a(href="#" class="d-block ms-1 twitter")
+                                   <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <g clip-path="url(#clip0_14_602)">
+                                      <path d="M0.714355 0.72998V19.9363H20.881V0.72998H0.714355ZM7.37825 16.2193H4.80997V8.35603H7.37825V16.2193ZM6.09411 7.28132C5.26965 7.28132 4.60534 6.64582 4.60534 5.86344C4.60534 5.08107 5.26965 4.44556 6.09411 4.44556C6.91857 4.44556 7.5814 5.08107 7.5814 5.86344C7.5814 6.64582 6.9156 7.28132 6.09411 7.28132ZM14.4232 16.2193V12.395C14.4232 11.4827 14.4069 10.3106 13.0902 10.3106C11.7734 10.3106 11.551 11.3034 11.551 12.33V16.2193H8.98714V8.35603H11.4472V9.43074H11.4828C11.8253 8.81218 12.6616 8.16114 13.9117 8.16114C16.5096 8.16114 16.99 9.78945 16.99 11.9078V16.2207H14.4247L14.4232 16.2193Z" fill="white"/>
+                                      </g>
+                                      <defs>
+                                      <clipPath id="clip0_14_602">
+                                      <rect width="20.1667" height="19.2063" fill="white" transform="translate(0.714355 0.72998)"/>
+                                      </clipPath>
+                                      </defs>
+                                   </svg>
+                         ul(class="px-0 mobile-navi__menu--bottom--terms")
+                            li 
+                               a(href="#" class="size-16 f-400 text-white") Terms &amp; Conditions
+                            li 
+                               a(href="#" class="size-16 f-400 text-white")  Privacy Notice &amp; Policy 
+                            li 
+                               a(href="#" class="size-16 f-400 text-white") Accreditations
+
+            
+
+                                
+
+

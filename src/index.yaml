@@ -1,0 +1,44 @@
+ProjectTitle: Tf Jones
+
+PageList:
+  - file: Home.html
+    ready: 95    
+  - file: ourservices.html
+    ready: 95
+  - file: ourservicesTwo.html
+    ready: 95    
+  - file: mission-values.html
+    ready: 95   
+  - file: teamBio.html
+    ready: 95
+  - file: casestudy.html
+    ready: 95
+  - file: casestudy-template.html
+    ready: 95
+  - file: join-us.html
+    ready: 95
+  - file: get-in-touch.html
+    ready: 95
+  # - file: projects.html
+  #   ready: 95
+  # - file: projects-detail.html
+  #   ready: 95
+  # - file: article.html
+  # - file: 03-services-template.html
+
+  #   ready: 10
+  # - file: 04-mission-values.html
+  #   ready: 10
+  # - file: 05-team-bio.html
+  #   ready: 10
+  # - file: 06-case-studies.html
+  #   ready: 10
+  # - file: 07-join-us.html
+  #   ready: 10
+  # - file: 08-contact.html
+  #   ready: 10
+  # - file: 404.html
+  #   ready: 95
+  - file: theme.html
+    ready: 10
+

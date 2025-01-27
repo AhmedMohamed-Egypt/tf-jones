@@ -1,0 +1,141 @@
+$sprite: (
+	commercial-mgmt-op: (
+		offset-x: 0px,
+		offset-y: 0px,
+		width: 100px,
+		height: 100px,
+		total-width: 320px,
+		total-height: 320px,
+		image: '../img/sprite.png'
+	),
+	compliance-reg-mgm: (
+		offset-x: -110px,
+		offset-y: 0px,
+		width: 100px,
+		height: 100px,
+		total-width: 320px,
+		total-height: 320px,
+		image: '../img/sprite.png'
+	),
+	construction-mgmt-ser: (
+		offset-x: 0px,
+		offset-y: -110px,
+		width: 100px,
+		height: 100px,
+		total-width: 320px,
+		total-height: 320px,
+		image: '../img/sprite.png'
+	),
+	corp-fin-mgm: (
+		offset-x: -110px,
+		offset-y: -110px,
+		width: 100px,
+		height: 100px,
+		total-width: 320px,
+		total-height: 320px,
+		image: '../img/sprite.png'
+	),
+	cost-management: (
+		offset-x: -220px,
+		offset-y: 0px,
+		width: 100px,
+		height: 100px,
+		total-width: 320px,
+		total-height: 320px,
+		image: '../img/sprite.png'
+	),
+	development-serv-: (
+		offset-x: -220px,
+		offset-y: -110px,
+		width: 100px,
+		height: 100px,
+		total-width: 320px,
+		total-height: 320px,
+		image: '../img/sprite.png'
+	),
+	opr-asset-mgm: (
+		offset-x: 0px,
+		offset-y: -220px,
+		width: 100px,
+		height: 100px,
+		total-width: 320px,
+		total-height: 320px,
+		image: '../img/sprite.png'
+	),
+);
+
+
+@mixin sprite-size($image) {
+	background-size: map-get(map-get($sprite, $image), 'total-width') map-get(map-get($sprite, $image), 'total-height');
+}
+
+@mixin sprite-width($image) {
+	width: map-get(map-get($sprite, $image), 'width');
+}
+
+@mixin sprite-height($image) {
+	height: map-get(map-get($sprite, $image), 'height');
+}
+
+@mixin sprite-position($image) {
+	background-position: map-get(map-get($sprite, $image), 'offset-x') map-get(map-get($sprite, $image), 'offset-y');
+}
+
+@mixin sprite-image($image) {
+	background-image: url(map-get(map-get($sprite, $image), 'image'));
+}
+
+@mixin sprite-image-retina($image) {
+	$image-path: map-get(map-get($sprite, $image), 'image');
+	$image-path-retina: str-slice($image-path, 1, str-index($image-path, '.png') - 1) + '@2x.png';
+
+	background-image: url($image-path-retina);
+}
+
+@mixin sprite($image, $size: true) {
+	@include sprite-image($image);
+	@include sprite-position($image);
+	background-repeat: no-repeat;
+
+	@if $size {
+		@include sprite-width($image);
+		@include sprite-height($image);
+	}
+
+	@media
+		only screen and (-webkit-min-device-pixel-ratio: 2),
+		only screen and (   min--moz-device-pixel-ratio: 2),
+		only screen and (     -o-min-device-pixel-ratio: 2/1),
+		only screen and (        min-device-pixel-ratio: 2),
+		only screen and (                min-resolution: 192dpi),
+		only screen and (                min-resolution: 2dppx) {
+
+		@include sprite-size($image);
+		@include sprite-image-retina($image);
+
+	}
+}
+
+
+
+	.icon-commercial-mgmt-op {
+		@include sprite(commercial-mgmt-op)
+	}
+	.icon-compliance-reg-mgm {
+		@include sprite(compliance-reg-mgm)
+	}
+	.icon-construction-mgmt-ser {
+		@include sprite(construction-mgmt-ser)
+	}
+	.icon-corp-fin-mgm {
+		@include sprite(corp-fin-mgm)
+	}
+	.icon-cost-management {
+		@include sprite(cost-management)
+	}
+	.icon-development-serv- {
+		@include sprite(development-serv-)
+	}
+	.icon-opr-asset-mgm {
+		@include sprite(opr-asset-mgm)
+	}

@@ -1,0 +1,343 @@
+// titles
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.h0-title {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 60px;
+}
+.h1-title {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1;
+}
+.h2-title {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 38px;
+}
+.h3-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+// paragraphs
+.p-huge {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 38px;
+}
+.p-bold {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+.p-main {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+.p-regular {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.p-label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 34px;
+}
+p {
+  margin: 0;
+ //Font size 
+ 
+
+
+// little inline helpers
+}
+$px:"px";
+@for $i from 16 to 100{
+  .size-#{$i}{
+    font-size:$i#{$px}
+  }
+ }
+ 
+.f-400 {
+  font-weight: normal;
+}
+.f-500 {
+  font-weight: 500;
+}
+.f-600 {
+  font-weight: 600;
+}
+.f-700 {
+  font-weight: 700;
+}
+.f-900 {
+  font-weight: 900;
+}
+.lh-s3{
+  line-height: 1.3;
+}
+.lh-1{
+  line-height: 1;
+}
+.lh-1-1{
+  line-height: 1.1;
+}
+.lh-1-25{
+  line-height: 1.25;
+}
+// align
+.tac {
+  text-align: center;
+}
+.tal {
+  text-align: left;
+}
+// color modifiers
+.c-red {
+  color: $colorRed;
+}
+.c-primary {
+  color: $colorPrimary;
+}
+.c-violet {
+  color: $colorViolet;
+}
+.roboto-font{
+  font-family: "Roboto", serif;
+
+}
+
+//font sizes 
+
+.text-mint{
+  color: $tfMint;
+  font-weight: 400;
+  font-size: 16px;
+  
+}
+.text-navy-14-reg{
+  color: $tfNavy;
+  font-size: 14px;
+  font-weight: 400;
+}
+.text-navy-16-reg{
+  color: $tfNavy;
+  font-size: 16px;
+  font-weight: 400;
+}
+.text-16-reg{
+ 
+  font-size: 16px;
+  font-weight: 400;
+}
+.text-navy-16-bold{
+  color: $tfNavy;
+  font-size: 16px;
+  font-weight: 600;
+}
+.text-blue-16-bold{
+  color: $tfBlue;
+  font-size: 16px;
+  font-weight: 600;
+}
+.size-18-bold-navy{
+  color: $tfNavy;
+  font-size: 18px;
+  font-weight: 900;
+}
+.size-18-reg-white{
+  font-size: clamp(1rem, 5vw, 1.125rem);
+  color: #fff;
+  font-weight: 400;
+}
+.size-30-bold-navy {
+  color: $tfNavy;
+  font-size: 24px;
+  font-weight: 900;
+}
+.text-blue-bold-28{
+  color:  $tfBlue;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.25;
+}
+.text-blue-semiBold-28{
+  color:  $tfBlue;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.25;
+}
+.text-48-bold{
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.text-blue-48-bold{
+  font-size: 48px;
+  font-weight: 900;
+  color: $tfBlue;
+}
+
+.text-blue-48-bold--1{
+  font-size: 48px;
+  font-weight: 900;
+  color: $tfBlue;
+}
+.text-bold-48--1{
+  font-size: 48px;
+  font-weight: 900;
+  
+}
+.text-navy-48-bold{
+  font-size: 48px;
+  font-weight: 900;
+  color: $tfNavy;
+}
+.text-16-bold{
+  font-size: 16px;
+  font-weight: 600;
+}
+.text-16-reg{
+  font-size: 16px;
+  font-weight: 400;
+}
+.size-24-bold-navy{
+  font-size: 24px;
+  font-weight: 900;
+  color: $tfNavy;
+
+}
+.size-24-reg-white{
+font-size: 24px;
+color: #fff;
+font-weight: 400;
+}
+.text-white-semi-bold-28{
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+}
+.text-semi-bold-28{
+  
+  font-size: 28px;
+  font-weight: 600;
+}
+.text-navy-28-bold{
+  font-size: 28px;
+  color: $tfNavy;
+  font-weight: 900;
+}
+.text-white-bold-28{
+  color: #fff;
+  font-size: 28px;
+  font-weight:900;
+}
+.text-bold-36 {
+ font-size: 36px;
+ font-weight: 900;
+}
+.text-navy-semi-bold-28{
+  font-size: clamp(1.4rem, 5vw, 1.75rem);
+  color: $tfNavy;
+  font-weight: 600;
+}
+.text-navy-medium-28{
+  font-size: clamp(1rem, 5vw, 1.75rem);
+  color: $tfNavy;
+  font-weight: 500;
+}
+.text-navy-28-bold {
+  font-size: clamp(.8rem, 5vw, 1.75rem);
+}
+
+.text-white-semi-bold-28,.text-white-bold-28,.size-28,.text-semi-bold-28{
+  font-size: clamp(1.4rem, 5vw, 1.75rem);
+}
+.text-blue-semiBold-28,.text-blue-bold-28{
+  font-size: clamp(1.5rem, 5vw, 1.75rem);
+}
+.size-30-bold-navy{
+  font-size: clamp(1.5rem, 5vw,1.875rem);
+}
+.size-24-bold-navy{
+  font-size: clamp(1.5rem, 5vw,1.125rem);
+}
+.text-bold-36{
+  font-size: clamp(1rem, 5vw, 2.25rem);
+}
+.text-navy-20-reg{
+  font-size: 20px;
+  font-weight: 400;
+  color: $tfNavy;
+}
+
+.size-blue-72-bold{
+  font-size: clamp(1.5rem, 5vw, 4.5rem);
+  font-weight: 900;
+  color: $tfBlue;
+}
+.size-72{
+  font-size: clamp(1.5rem, 5vw, 4.5rem);
+}
+.size-38{
+  font-size: clamp(1.125rem, 5vw, 2.375rem);
+}
+.text-navy-20-reg{
+  font-size: clamp(.875rem, 5vw, 1.25rem);
+}
+
+.text-white-16{
+  font-size: 16px;
+  color: #fff;
+}
+.text-navy-16{
+  color: $tfNavy;
+  font-size: 16px;
+}
+
+.h2-heading {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+.fixed-size-bold-48{
+  font-size: 48px;
+  font-weight: 900;
+}
+h1.hero__mainTitle,.text-48-bold ,.text-48-bold,.text-blue-48-bold,.text-navy-48-bold{
+  font-size: clamp(2.25rem, 5vw, 3rem);
+}
+.text-blue-48-bold--1,.text-bold-48--1{
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+
+
+
+//.text-white-bold-38
+
+
+.text-white-bold-38{
+  font-size: clamp(1.8rem, 5vw, 2.3rem);
+ 
+}
+
+
+//speak 
+//.text-blue-bold-38,.text-blue-semiBold-38
+
+.speak .text-blue-bold-38,.speak .text-blue-semiBold-38{
+  font-size: clamp(1.5rem, 5vw, 2.3rem);
+}
+
+
+//fontweight mobile 
+.f-600-mobile{
+  @media only screen and (max-width:1199px) {
+    font-weight: 600 !important;
+  }
+  
+}
+

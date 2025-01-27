@@ -1,0 +1,79 @@
+// DIRECTIONS
+.projects
+  position: relative
+  z-index: 2
+  &__map
+    position: relative
+    min-height: 680px
+  &__map-container
+    position: absolute 0
+    display: flex
+    flex-direction: column
+    left: 50%
+    &--collumned
+      max-width: 50%
+    .js-gmap, iframe
+      flex: 1 1 auto
+      width: 100%
+      height: 100%
+  &__overlay
+    position: relative
+    z-index: 2
+    pointer-events: none
+    .col-21
+      pointer-events: all
+  &__info
+    // background: $wp-lgreen
+    pointer-events: all
+
+    h1
+      color: $wp_dgray
+      // text-shadow: #1EAE51 1px 0 10px
+
+.projects.green
+  background-color: $wp_lgray
+  // background-image:  url(../img/projects-header-image.svg)
+  background-repeat: no-repeat
+  background-position: left bottom
+  background-size: contain
++r($xxl)
+  .projects.green h1
+    font-size: 3rem
++r($lg)
+  .projects
+    &__map
+      min-height: 450px
+    &__map-container
+      &--collumned
+        position: relative
+        max-width: 100%
+        min-height: 450px
+        left: 0
+    &__info
+      margin-left: -40px
+      margin-right: -40px
+      padding-left: 40px
+      padding-right: 40px
+  .projects.green
+    background-position: 0 -250px
+    background-size: cover
+    h1
+      margin-bottom: 2em
+      font-size: 2.5rem
+
++r($sm)
+  .directions
+    &__map
+      min-height: 300px
+    &__map-container
+      &--collumned
+        min-height: 300px
+        left: 0
+
++r($sm)
+  .directions
+    &__map
+      min-height: 220px
+    &__map-container
+      &--collumned
+        min-height: 220px

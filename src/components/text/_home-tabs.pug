@@ -1,0 +1,26 @@
+// HOME tabs
+.text.mt-3.mb-7.js-tabs(data-aos="fade-up")
+  .container
+    .text__tabs.row.js-tabs-trigger
+      .col-12.col-md-4
+        a(href="#" data-tab="tab_1") Concise data management
+      .col-12.col-md-4
+        a(href="#" data-tab="tab_2").is-active Consultancy & strategy
+      .col-12.col-md-4
+        a(href="#" data-tab="tab_3") Technology solutions
+
+    // active tab should have inline styles due to nature of jquery animation
+    .tab(data-tab="tab_1")
+      .row.mt-2
+        .col-12.col-md-9
+          p.p-huge Strategic thinking, aligned with in-business delivery, makes permanent decisions made at the highest level work. This is when our team becomes your team.
+
+    .tab(data-tab="tab_2"  style="display: block")
+      .row.mt-2
+        .col-12.col-md-9
+          p.p-huge 2 Strategic thinking, aligned with in-business delivery, makes permanent decisions made at the highest level work
+
+    .tab(data-tab="tab_3")
+      .row.mt-2
+        .col-12.col-md-9
+          p.p-huge 3 Delivery, makes permanent decisions made at the highest level work. This is when our team becomes your team.

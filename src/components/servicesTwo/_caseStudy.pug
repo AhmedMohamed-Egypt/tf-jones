@@ -1,0 +1,18 @@
+- var List = [{imgsrc:'img/case-1.png',title:'Company/ Development Name',subTtitle:'General Location in the UK',theme:'yellow-color'},{imgsrc:'img/case-2.png',title:'Company/ Development Name',subTtitle:'General Location in the UK',theme:'blue-color'}]
+section(class="case-study py-3")
+ .container 
+  div(class="case-study__container")
+   .row.flex-column.flex-lg-row.col-xl-12.mx-auto.col
+    .mb-3.mb-xl-0.col-xl-4.col
+     h3(class="text-blue-48-bold lh-s1 case-study__mainTitle") Case Studies 
+     p(class="text-navy-16") Check out our case studies on the services that we provide 
+    .col-xl-8.col
+     .row.flex-column.flex-lg-row
+      each val,index in List 
+       .col(class=`${index===0?'mb-3 mb-lg-0':''}`)
+        a(href="#" class=`d-block ${val.theme}`)
+         img(src=`${val.imgsrc}` class="img-fluid w-100")
+         h3(class="text-navy-16 f-700 mb-0 mt-1")=val.title 
+         h2(class="text-navy-16 f-400")=val.subTtitle
+
+

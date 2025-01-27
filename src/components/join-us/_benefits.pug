@@ -1,0 +1,17 @@
+- var list = [{title:'Service enhanced annual leave',class:'tree'},{title:'Refer a Friend',class:'rfr-friend'},{title:'Social events',class:'social-evnts'},{title:'Employee Assistance Programme (EAP)',class:'employee-assist'},{title:'Bonus scheme',class:'bonus-scheme'},{title:'Development opportunities',class:'dev-opp'},{title:'Company vehicle ',class:'comp-veh'},{title:'Enhanced family leave',class:'enhance-family'},{title:'interest-free employee loans',class:'interest-free'}]
+
+
+section(class="join-us-benefits pt-5")
+ .container 
+  .join-us-benefits__container.col-lg-10.mx-auto.col-11
+   h2(class="text-blue-48-bold mb-5") Perks, Benefits and Rewards
+   .join-us-benefits__items
+    .row 
+     each val in list 
+      .col-lg-4.col-md-6.col-12.d-flex.mb-1.align-items-center.mb-4.p-0.mx-auto.mx-sm-0
+       div(class=`join-us-benefits__items--icon ${val.class}`)
+       div(class="join-us-benefits__items--txt col-5")
+        h3(class="text-navy-16-bold")=val.title
+       
+     
+      

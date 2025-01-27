@@ -1,0 +1,28 @@
+.ourteam{
+    &__cards{
+        &--card{
+           
+            &:not(:last-child){
+                margin-right: 15px;
+            }
+            
+        }
+        &--img{
+            /*
+            width: 310px;
+            height: 310px;
+            */
+            &::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 10px;
+                background-color: $tfBlue;;
+                left: 0;
+
+            }
+
+        }
+    }
+}
